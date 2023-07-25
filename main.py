@@ -23,9 +23,12 @@ def padel_ball_cost(ball_boxes):
   elif ball_boxes == 3:
     return 5
   
+ 
 def padel_game_cost():
-  input = ("Is the court type indoors or outdoors?")
-  input = ("What racket brand do you need? Bullpadel, Nox, or Siux?")
-  input = ("How many number of ball boxes? 1,2, or 3?")
+    court_type = input("Is the court type indoors or outdoors?")
+    racket_brand = input("What racket brand do you need? Bullpadel, Nox, or Siux?")
+    ball_boxes = int(input("How many number of ball boxes? 1, 2, or 3?"))
+    total_cost = padel_court_cost(court_type) + racket_cost(racket_brand) + padel_ball_cost(ball_boxes)
+    
 
 
